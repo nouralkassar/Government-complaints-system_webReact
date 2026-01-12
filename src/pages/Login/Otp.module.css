@@ -1,0 +1,55 @@
+.otpContainer {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 200px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.otpInputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  direction: ltr;
+}
+
+.otpBox {
+  width: 45px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  direction: ltr; 
+  border: 2px solid #01332e;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.otpBox:focus {
+  border-color: #025048;
+  box-shadow: 0 0 5px #025048;
+}
+
+.submitBtn {
+  background-color: #01332e !important;
+  color: white !important;
+}
+
+.submitBtn:hover {
+  background-color: #025048 !important;
+}

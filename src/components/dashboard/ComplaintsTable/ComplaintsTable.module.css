@@ -1,0 +1,163 @@
+/* Container العام */
+.container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* حقل البحث والفلترة */
+.controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls input {
+  padding: 0.5rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.controls select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* الجدول */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.table th {
+  background-color: #e4e2e2;
+  font-weight: 600;
+}
+
+.rowClickable {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rowClickable:hover {
+  background-color: #f0f8ff;
+}
+
+/* ------------------------------- */
+/*         شكل حالة الشكوى         */
+/* ------------------------------- */
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* ألوان الحالات مثل الصورة تماماً */
+.status-new {
+  background: #e3f2fd;
+  color: #0d6efd;
+}
+
+.status-pending {
+  background: #fff8e1;
+  color: #ff9800;
+}
+
+.status-completed {
+  background: #e8f5e9;
+  color: #28a745;
+}
+
+.status-rejected {
+  background: #fdecea;
+  color: #dc3545;
+}
+
+.statusBadge:hover {
+  filter: brightness(0.95);
+}
+
+/* Dropdown عند التعديل */
+.dropdown {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #999;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  font-size: 0.85rem;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination .activePage {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+
+.loadingSpinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
